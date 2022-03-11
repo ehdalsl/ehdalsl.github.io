@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* Style the header */
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+  <div class="column middle">
+    <h1>Stanford researchers find a quicker, <br>cheaper way to sort isotopes</h1>
+    <p>BY EMMANUEL ROMERO L.A. Cicero Richard Zare
+        <br>Professor Richard Zare in his lab. Whether it's the summer
+        <br>grass that tickles your feet or the red Bordeaux smacking on
+        <br>your palate, nearly every part of the world around you carries
+        <br>special chemical markers. These markers, called isotopes, can
+        <br>tell scientists where the molecules that compose a substance
+        <br>are from, where they traveled and what happened to them
+        <br>along the way. But doing these analyses has been complex
+        <br>and costly. Now, Stanford chemists have developed a new
+        <br>method to make isotopic analysis easier and less expensive.
+    </p>
+  </div>
+  <div class="column side">
+    <h2>Chance to dance: Enthusiasts fly to Stanford for dance weekend</h2>
+    <p>BY CYNTHIA HAVEN L.A. Cicero Lindy Hop instruction
+        Stanford is an epicenter for the vintage dance movement-but
+        life in the Stanford dance world is not all foxtrots and tangos.
+        The June 26-28 Stanford's Dance Weekend in Roble Gym
+        offers something for modern dance enthusiasts, too: the
+        hustle, the West Coast swing, 1970s disco hustle, Bollywood
+        and blues fusion.
+        </p>
+  </div>
+</div>
+ 
+  
+</body>
+</html>
